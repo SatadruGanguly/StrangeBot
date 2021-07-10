@@ -39,7 +39,7 @@ def welcome():
     return Responses.GREETINGS[0]
 
 def getSymptoms(user_msg):
-    nltk.download('punkt')
+    # nltk.download('punkt')
     fpath = os.path.join(BASE_DIR, 'NLP', 'symptom-list.csv')
     df = pd.read_csv(fpath)
     STEMMED_SYMPTOMS = list(df['0'])
