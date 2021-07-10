@@ -1,0 +1,150 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.selectpanel
+{
+  flex-basis: 95%;
+  width: 92%;
+
+  display: flex;
+  /* flex-direction: column; */
+
+  overflow: auto;
+
+  border: 2px #a8a8a8 solid;
+  border-radius: 10px;
+  margin: 10px 0 25px 0;
+  background-color: rgba(247, 250, 249, 0.5);
+}
+
+.container
+{
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    
+    margin: 5% auto;
+
+    /* border: 2px red solid; */
+}
+
+.welcome
+{
+  border-radius: 10px;
+  /* border: 2px red solid; */
+  /* margin-bottom: 10px; */
+
+  display: flex;
+
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 600;
+  color: #03574a;
+  font-size: 20px;
+  text-shadow: 0 0 20px white;
+  line-height: 50px;
+
+}
+
+.welcome h2
+{
+  margin: 10px auto;
+}
+
+/*********************************************************/
+
+form
+{
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* File Upload */
+form label
+{
+    margin: auto;
+}
+
+form input
+{
+    /* border-radius: 15px; */
+    /* border: 2px #07ba76 solid; */
+    width: 70%;
+    height: 30px;
+
+    margin: 5px auto;
+    /* border: 2px red solid; */
+    /* padding: auto; */
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 300;
+}
+
+form input *
+{
+    margin: auto;
+}
+
+/* form input[type="file"]:hover
+{
+  outline: none;
+  box-shadow: 0px 0px 20px #98a9b5, 0px 0px 20px #98a9b5;
+} */
+
+button
+{
+    margin: 0 auto;
+
+    width: 30%;
+    /* height: 20px; */
+    padding: 5px;
+
+    border-radius: 20px;
+    border: 2px #07ba76 solid;
+
+    background-color: #07ba76;
+    color: white;
+
+    font-size: 18px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 500;
+}
+
+button:active
+{
+  background-color: black;
+}
+
+/* .result
+{
+    width: 70%;
+    margin: 5px auto;
+    border: 2px red solid;
+} */
+
+.result
+{
+    width: 60%;
+    border-radius: 15px;
+    /* border: 2px red solid; */
+    margin: 10px auto;
+}
+
+/*******************************************************/
+
+a
+{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+}
