@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+    <link rel="stylesheet" href="{% static "MedBotApp/css/index.css" %}">
+    <div class="selectpanel">
+        <div class="welcome">
+            {% if user.is_authenticated %}
+                <h2>Welcome, {{ user.first_name }} {{ user.last_name }}</h2>
+            {% else %}
+                <h2>Welcome to MedBot</h2>
+            {% endif %}
+        </div>
+        
+        <div class="line">
+            <div class="tablet">
+                {% if user.is_authenticated %}
+                    <a href="/account">
+                        <div class="wrapper">
+                            <img src="{% static "MedBotApp/assets/account.png" %}" alt="register">
+                            <p>Account Options</p>
+                        </div>
+                    </a>
+                {% else %}
+                    <a href="/register">
+                        <div class="wrapper">
+                            <img src="{% static "MedBotApp/assets/register.png" %}" alt="register">
+                            <p>Register</p>
+                        </div>
+                    </a>
+                {% endif %}
+            </div>
+            <div class="tablet">
+                {% if user.is_authenticated %}
+                    <a href="/logout">
+                        <div class="wrapper">
+                            <img src="{% static "MedBotApp/assets/logout.png" %}" alt="login/logout">
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                {% else %}
+                <a href="/login">
+                    <div class="wrapper">
+                        <img src="{% static "MedBotApp/assets/login.png" %}" alt="login/logout">
+                        <p>Login</p>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="tablet">
+                <a href="/chat">
+                    <div class="wrapper">
+                        <img src="{% static "MedBotApp/assets/chat.png" %}" alt="ai-chat">
+                        <p>A.I. Chat</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tablet">
+                <a href="/image_analysis">
+                    <div class="wrapper">
+                        <img src="{% static "MedBotApp/assets/brain.png" %}" alt="mha">
+                        <p>Health Analysis (Image-Based)</p>
+                    </div>
+                </a>
+            </div>
+        </div>        
+        <!-- <p>Test message: 
+            {%for m in msg %}
+                {{ m }}
+            {% endfor %}
+        </p> -->
+    </div>
+{% endblock %}

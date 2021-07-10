@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+<link rel="stylesheet" href="{% static "MedBotApp/css/mood_detection.css" %}">
+    <div class="selectpanel">
+        <div class="container">
+            <div class="welcome"><h2>Mood Detection</h2></div>
+
+            <form method="POST" enctype="multipart/form-data">
+                {{ form.user_image }}
+                <br>
+                {% csrf_token %}
+                <button type="submit">Submit</button>
+            </form>
+            <a href="/image_analysis">&lt; Back</a>
+
+            {% if flag == 1 %}
+                <hr width="80%">
+                <p>Mood Detected : <b>{{ exp_msg }}</b></p>
+                <img class="result" src="{% static user_img_url %}" alt="Image Uploaded By User">
+            {% endif %}
+
+            <br>
+        </div>
+    </div>
+{% endblock %}

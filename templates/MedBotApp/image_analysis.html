@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+    <link rel="stylesheet" href="{% static "MedBotApp/css/image_analysis.css" %}">
+    <div class="selectpanel">
+        <div class="container">
+            <div class="welcome">
+                <h2>Image Based Analysis</h2>
+            </div>
+    
+            <div class="line">
+                <div class="tablet">
+                    <a href="/eye_analysis">
+                        <div class="wrapper">
+                            <img src="{% static "MedBotApp/assets/eye-scanner.png" %}" alt="eye-analysis">
+                            <p>Infected Eye Analysis</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tablet">
+                    <a href="/mood_detection">
+                        <div class="wrapper">
+                            <img src="{% static "MedBotApp/assets/moods.png" %}" alt="mood-detection">
+                            <p>Mood Detection</p>
+                        </div>
+                    </a>
+                </div>
+            </div>        
+            <br>
+            <a href="/" class="backbutton">&lt; Back</a>
+        </div>
+    </div>
+{% endblock %}

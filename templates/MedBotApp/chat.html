@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+      
+      <link rel="stylesheet" href="{% static "MedBotApp/css/chat.css" %}">
+      
+      <div class="msgpanel">
+
+        <div class="messages">
+          <div class="welcome"><h2>Welcome to MedBot</h2></div>
+
+          <!-- <div class="botmsg"> <p>Hi, how are you today?</p> </div> -->
+          <!-- <div class="usermsg"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </div> -->
+          <!-- <div class="botmsg"> <p>Hi, how are you today?</p> </div> -->
+          <!-- <div class="usermsg"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </div> -->
+          
+          {% if chats %}
+            {% for chat in chats %}
+              {% if chat.sentby == 'Bot' %}
+                <div class="botmsg"> <p> {{ chat.message|linebreaks }} </p> </div>
+              {% elif chat.sentby == 'User' %}
+                <div class="usermsg"> <p> {{ chat.message|linebreaks }} </p> </div>
+              {% elif chat.sentby == 'Dummy' %}
+                <hr class="msgdivider" width="100%">
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+        </div>
+
+      </div>
+
+      <div class="sendpanel">
+        <form class="" method="post">
+          <!-- <input type="text" name="textmsg" value="" placeholder="What's bothering you?"> -->
+          {{ form.message }}
+          {% csrf_token %}
+          <button type="submit" name="button" id="msgsubmit"><img src="{% static "MedBotApp/assets/send.svg" %}" alt="Send" height=25 width=27 ></button>
+        </form>
+      </div>
+
+      <div class="backbutton">
+        <a href="/"><p>&lt; Back</p></a>
+      </div>
+    </div>
+
+    <script>
+      function placeBackButton()
+      {
+        ex = document.getElementsByClassName("msgpanel")[0].getBoundingClientRect()
+        lPx = String(ex['x'] + 5) + 'px'
+        aux = document.getElementsByClassName('backbutton')[0]
+        aux.style.left = lPx
+      }
+      // window.onresize = function() {placeBackButton()}
+      // document.body.onload = function() {placeBackButton()}
+
+      document.getElementById("{{ form.message.id_for_label }}").focus()
+    </script>
+
+{% endblock %}

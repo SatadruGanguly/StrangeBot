@@ -1,0 +1,133 @@
+,0,1,2
+0,itch,itching,itching
+1,skin rash,skin rash,skin_rash
+2,nodal skin erupt,nodal skin eruptions,nodal_skin_eruptions
+3,continu sneez,continuous sneezing,continuous_sneezing
+4,shiver,shivering,shivering
+5,chill,chills,chills
+6,joint pain,joint pain,joint_pain
+7,stomach pain,stomach pain,stomach_pain
+8,acid,acidity,acidity
+9,ulcer on tongu,ulcers on tongue,ulcers_on_tongue
+10,muscl wast,muscle wasting,muscle_wasting
+11,vomit,vomiting,vomiting
+12,burn micturit,burning micturition,burning_micturition
+13,spot urin,spotting urination,spotting_urination
+14,fatigu,fatigue,fatigue
+15,weight gain,weight gain,weight_gain
+16,anxieti,anxiety,anxiety
+17,cold hand and feet,cold hands and feets,cold_hands_and_feets
+18,mood swing,mood swings,mood_swings
+19,weight loss,weight loss,weight_loss
+20,restless,restlessness,restlessness
+21,lethargi,lethargy,lethargy
+22,patch in throat,patches in throat,patches_in_throat
+23,irregular sugar level,irregular sugar level,irregular_sugar_level
+24,cough,cough,cough
+25,high fever,high fever,high_fever
+26,sunken eye,sunken eyes,sunken_eyes
+27,breathless,breathlessness,breathlessness
+28,sweat,sweating,sweating
+29,dehydr,dehydration,dehydration
+30,indigest,indigestion,indigestion
+31,headach,headache,headache
+32,yellowish skin,yellowish skin,yellowish_skin
+33,dark urin,dark urine,dark_urine
+34,nausea,nausea,nausea
+35,loss of appetit,loss of appetite,loss_of_appetite
+36,pain behind the eye,pain behind the eyes,pain_behind_the_eyes
+37,back pain,back pain,back_pain
+38,constip,constipation,constipation
+39,abdomin pain,abdominal pain,abdominal_pain
+40,diarrhoea,diarrhoea,diarrhoea
+41,mild fever,mild fever,mild_fever
+42,yellow urin,yellow urine,yellow_urine
+43,yellow of eye,yellowing of eyes,yellowing_of_eyes
+44,acut liver failur,acute liver failure,acute_liver_failure
+45,fluid overload,fluid overload,fluid_overload
+46,swell of stomach,swelling of stomach,swelling_of_stomach
+47,swell lymph node,swelled lymph nodes,swelled_lymph_nodes
+48,malais,malaise,malaise
+49,blur and distort vision,blurred and distorted vision,blurred_and_distorted_vision
+50,phlegm,phlegm,phlegm
+51,throat irrit,throat irritation,throat_irritation
+52,red of eye,redness of eyes,redness_of_eyes
+53,sinus pressur,sinus pressure,sinus_pressure
+54,runni nose,runny nose,runny_nose
+55,congest,congestion,congestion
+56,chest pain,chest pain,chest_pain
+57,weak in limb,weakness in limbs,weakness_in_limbs
+58,fast heart rate,fast heart rate,fast_heart_rate
+59,pain dure bowel movement,pain during bowel movements,pain_during_bowel_movements
+60,pain in anal region,pain in anal region,pain_in_anal_region
+61,bloodi stool,bloody stool,bloody_stool
+62,irrit in anus,irritation in anus,irritation_in_anus
+63,neck pain,neck pain,neck_pain
+64,dizzi,dizziness,dizziness
+65,cramp,cramps,cramps
+66,bruis,bruising,bruising
+67,obes,obesity,obesity
+68,swollen leg,swollen legs,swollen_legs
+69,swollen blood vessel,swollen blood vessels,swollen_blood_vessels
+70,puffi face and eye,puffy face and eyes,puffy_face_and_eyes
+71,enlarg thyroid,enlarged thyroid,enlarged_thyroid
+72,brittl nail,brittle nails,brittle_nails
+73,swollen extremeti,swollen extremeties,swollen_extremeties
+74,excess hunger,excessive hunger,excessive_hunger
+75,extra marit contact,extra marital contacts,extra_marital_contacts
+76,dri and tingl lip,drying and tingling lips,drying_and_tingling_lips
+77,slur speech,slurred speech,slurred_speech
+78,knee pain,knee pain,knee_pain
+79,hip joint pain,hip joint pain,hip_joint_pain
+80,muscl weak,muscle weakness,muscle_weakness
+81,stiff neck,stiff neck,stiff_neck
+82,swell joint,swelling joints,swelling_joints
+83,movement stiff,movement stiffness,movement_stiffness
+84,spin movement,spinning movements,spinning_movements
+85,loss of balanc,loss of balance,loss_of_balance
+86,unsteadi,unsteadiness,unsteadiness
+87,weak of one bodi side,weakness of one body side,weakness_of_one_body_side
+88,loss of smell,loss of smell,loss_of_smell
+89,bladder discomfort,bladder discomfort,bladder_discomfort
+90,foul smell ofurin,foul smell ofurine,foul_smell_ofurine
+91,continu feel of urin,continuous feel of urine,continuous_feel_of_urine
+92,passag of gase,passage of gases,passage_of_gases
+93,intern itch,internal itching,internal_itching
+94,toxic look (typhos),toxic look (typhos),toxic_look_(typhos)
+95,depress,depression,depression
+96,irrit,irritability,irritability
+97,muscl pain,muscle pain,muscle_pain
+98,alter sensorium,altered sensorium,altered_sensorium
+99,red spot over bodi,red spots over body,red_spots_over_body
+100,belli pain,belly pain,belly_pain
+101,abnorm menstruat,abnormal menstruation,abnormal_menstruation
+102,dischrom patch,dischromic patches,dischromic_patches
+103,water from eye,watering from eyes,watering_from_eyes
+104,increas appetit,increased appetite,increased_appetite
+105,polyuria,polyuria,polyuria
+106,famili histori,family history,family_history
+107,mucoid sputum,mucoid sputum,mucoid_sputum
+108,rusti sputum,rusty sputum,rusty_sputum
+109,lack of concentr,lack of concentration,lack_of_concentration
+110,visual disturb,visual disturbances,visual_disturbances
+111,receiv blood transfus,receiving blood transfusion,receiving_blood_transfusion
+112,receiv unsteril inject,receiving unsterile injections,receiving_unsterile_injections
+113,coma,coma,coma
+114,stomach bleed,stomach bleeding,stomach_bleeding
+115,distent of abdomen,distention of abdomen,distention_of_abdomen
+116,histori of alcohol consumpt,history of alcohol consumption,history_of_alcohol_consumption
+117,fluid overload,fluid overload,fluid_overload
+118,blood in sputum,blood in sputum,blood_in_sputum
+119,promin vein on calf,prominent veins on calf,prominent_veins_on_calf
+120,palpit,palpitations,palpitations
+121,pain walk,painful walking,painful_walking
+122,pus fill pimpl,pus filled pimples,pus_filled_pimples
+123,blackhead,blackheads,blackheads
+124,scur,scurring,scurring
+125,skin peel,skin peeling,skin_peeling
+126,silver like dust,silver like dusting,silver_like_dusting
+127,small dent in nail,small dents in nails,small_dents_in_nails
+128,inflammatori nail,inflammatory nails,inflammatory_nails
+129,blister,blister,blister
+130,red sore around nose,red sore around nose,red_sore_around_nose
+131,yellow crust ooz,yellow crust ooze,yellow_crust_ooze

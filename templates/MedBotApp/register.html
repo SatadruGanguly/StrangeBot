@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+    <link rel="stylesheet" href="{% static "MedBotApp/css/register.css" %}">
+    <div class="regpanel">
+        <div class="container">
+            <div class="welcome"><h2>Register</h2></div>
+            
+            <form method="POST">
+                {{ user_reg_form.first_name }}
+                <br>
+                {{ user_reg_form.last_name }}
+                <br>
+                {{ user_reg_form.username }}
+                <br>
+                {{ user_reg_form.password }}
+                <br>
+                {{ user_reg_form.reenter_pass }}
+                <br>
+
+                <fieldset class="genderadio">
+                    {% for radio in myuser_reg_form.gender %}
+                        <span class="myradio">
+                            {{ radio.tag }} 
+                            <label for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
+                        </span>
+                    {% endfor %}
+                </fieldset>
+                
+                <br>
+
+                <label for="{{ myuser_reg_form.dob.id_for_label }}">Date of Birth</label>
+                {{ myuser_reg_form.dob }} 
+                
+                <br>
+                <span class="consent">
+                    {{ myuser_reg_form.check1 }}
+                    <p>{{ myuser_reg_form.check1.label }}</p>
+                </span>
+                <span class="consent">
+                    {{ myuser_reg_form.check2 }}
+                    <p>{{ myuser_reg_form.check2.label }}</p>
+                </span>
+                {% csrf_token %}
+                <button type="submit">Register</button>
+            </form>
+
+            <a href="/">&lt; Back</a>
+            <br>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("{{ login_form.username.id_for_label }}").focus()
+    </script>
+{% endblock %}

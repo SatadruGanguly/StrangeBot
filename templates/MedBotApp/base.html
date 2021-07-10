@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Med ChatBot</title>
+    <link rel="stylesheet" href="{% static "MedBotApp/css/base.css" %}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700,800,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="mainpanel">
+      
+      {% if user.is_authenticated %}
+        <div class="userstatus authenticated">
+          <img src="{% static "MedBotApp/assets/online.png" %}" alt="">
+          <p>{{ user.username }}</p>
+        </div>
+      {% else %}
+        <div class="userstatus anonymous">
+          <img src="{% static "MedBotApp/assets/offline.png" %}" alt="">
+          <p>Guest</p>
+        </div>
+      {% endif %}
+
+      <div class="titlepanel">
+        <h2>StrangeBot - The NextGen MedBot</h2>
+      </div>
+
+      {% block body_block %}
+
+      {% endblock %}
+
+      <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <script type="text/javascript">
+      function placeActiveUser()
+      {
+        element = document.getElementsByClassName("mainpanel")[0].getBoundingClientRect()
+        rPos = String(element.x + 25) + 'px'
+        au = document.getElementsByClassName('userstatus')[0]
+        au.style.right = rPos
+      }
+      window.onresize = function() {placeActiveUser(); placeBackButton();}
+      document.body.onload = function() {placeActiveUser(); placeBackButton();}
+    </script>
+    
+  </body>
+</html>

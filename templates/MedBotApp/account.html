@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+    <link rel="stylesheet" href="{% static "MedBotApp/css/account.css" %}">
+    <div class="selectpanel">
+        <div class="container">
+            <div class="welcome"><h2>Account Information</h2></div>
+            
+            <form method="POST">
+                <div class="line">
+                    <!-- UserName (non-editable) -->
+                    <label for="un">Username</label>
+                    <input type="text" name="un" id="un" value="{{ username }}" disabled required>
+                </div>
+                <div class="line">
+                    <!-- First Name -->
+                    <label for="fn">First Name</label>
+                    <input type="text" name="fn" id="fn" value="{{ first_name }}" required>
+                </div>
+                <div class="line">
+                    <!-- Last Name -->
+                    <label for="ln">Last Name</label>
+                    <input type="text" name="ln" id="ln" value="{{ last_name }}" required>
+                </div>
+                
+                <div class="line">
+                    <!-- Gender -->
+                    <label for="g">Gender</label>
+                    <!-- <input type="text" name="g" id="g" value="{{ gender }}"> -->
+                    <select id="cars" name="g" required>
+                        {% if gender == 'Male' %}
+                            <option value="Male" selected >Male</option>
+                        {% else %}
+                            <option value="Male">Male</option>
+                        {% endif %}
+                        
+                        {% if gender == 'Female' %}
+                            <option value="Female" selected >Female</option>
+                        {% else %}
+                            <option value="Female">Female</option>
+                        {% endif %}
+                        
+                        {% if gender == 'Others' %}
+                            <option value="Others" selected >Others</option>
+                        {% else %}
+                            <option value="Others">Others</option>
+                        {% endif %}
+                      </select>
+                </div>
+                <div class="line">
+                    <!-- DoB -->
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" value="{{ dob }}" required>
+                </div>
+
+                {% csrf_token %}
+
+                <div class="line">
+                    <button type="submit">Update Account Data</button>
+                </div>
+            </form>
+            <hr width="80%">
+            <a href="/changePassword"><button>Change Password</button></a>
+            <a href="/downloadTranscript"><button>Download Chat Transcript</button></a>
+            <a href="/">&lt; Back</a>
+        </div>
+    </div>
+{% endblock %}

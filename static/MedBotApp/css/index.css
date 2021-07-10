@@ -1,0 +1,93 @@
+body
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+.selectpanel
+{
+  flex-basis: 95%;
+  width: 92%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: auto;
+
+  border: 2px #a8a8a8 solid;
+  border-radius: 10px;
+  margin: 10px 0 25px 0;
+  background-color: rgba(247, 250, 249, 0.5);
+}
+
+.welcome
+{
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+
+  font-weight: 600;
+  color: #03574a;
+  font-size: 20px;
+  text-shadow: 0 0 20px white;
+  line-height: 50px;
+
+}
+
+.welcome h2
+{
+  margin: 10px auto;
+}
+
+.line
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line .tablet
+{
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    border: 2px #a8a8a8 solid;
+
+    margin: 2vh 0;
+    padding: 15px;
+    min-width: 20%;
+    max-width: 20%;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.line .tablet:hover
+{
+  outline: none;
+  box-shadow: 0px 0px 20px #98a9b5, 0px 0px 20px #98a9b5;
+}
+
+.line .tablet .wrapper
+{
+    /* margin: auto; */
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    align-self: center;
+
+    /* border: 1px red solid; */
+}
+
+img
+{
+    /* border: 2px red solid; */
+    margin: 2px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/**************************************/

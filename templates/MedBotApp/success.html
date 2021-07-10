@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+    <link rel="stylesheet" href="{% static "MedBotApp/css/success.css" %}">
+    <div class="selectpanel">
+        <h2 id="success_welcome">Success Page</h2>
+        {% if success_status == 1 %}
+            <h2>{{ success_msg }}</h2>
+            <p>{{ extra_msg }}</p>
+            <!-- <br> -->
+            <!-- <a id="timeout" href="/logout" hidden></a> -->
+        {% else %}
+            <h2>Dummy Success Message.</h2>
+            <!-- <br> -->
+            <h4>Also, why are you here?</h4>
+            <!-- <br> -->
+            <a href="/">&lt; Back</a>
+        {% endif %}
+    </div>
+    <script>
+        setTimeout(function(){
+             window.location.href="/";
+          }, 5000);
+    </script>
+{% endblock %}

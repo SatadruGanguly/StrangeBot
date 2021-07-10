@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends "MedBotApp/base.html" %}
+{% load static %}
+{% block body_block %}
+    <link rel="stylesheet" href="{% static "MedBotApp/css/eye_analysis.css" %}">
+    <div class="selectpanel">
+        <div class="container">
+            <div class="welcome"><h2>Eye Analysis</h2></div>
+
+            <form method="POST" enctype="multipart/form-data">
+                {{ form.user_image }}
+                <br>
+                {% csrf_token %}
+                <button type="submit">Submit</button>
+            </form>
+            <a href="/image_analysis">&lt; Back</a>
+            
+            <br>
+
+            <!-- <img class="result" src="{% static test_img_url %}" alt="Result Image from Bot"> -->
+            <!-- Evaluation Successful -->
+
+            {% if flag == 1 %}
+                <hr width="80%">
+                {% if result_status == 1 %}
+                    <img class="result" src="{% static result_image %}" alt="Result Image from Bot">
+                {% endif %}
+                <br>
+                {{ result_msg }}
+            {% endif %}
+
+            <br>
+        </div>
+    </div>
+{% endblock %}
