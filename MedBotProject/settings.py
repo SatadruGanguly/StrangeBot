@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!obb$70fzluvwkm-!w7975625onp)y^wib=_m@bksa^wf&a5pr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'strangebot-medbot.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'strangebot-medbot.herokuapp.com']
 
 
 # Application definition
